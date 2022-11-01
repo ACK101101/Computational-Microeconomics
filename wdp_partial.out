@@ -1,0 +1,64 @@
+Problem:    auctioneer_wdp_partial
+Rows:       13
+Columns:    10
+Non-zeros:  53
+Status:     OPTIMAL
+Objective:  fin_profit = 0.6454545455 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 fin_profit   B       0.645455                             
+     2 not_neg[s1]  B       0.645455            -0               
+     3 not_neg[s2]  B       0.645455            -0               
+     4 not_neg[s3]  B       0.645455            -0               
+     5 not_neg[s4]  B       0.645455            -0               
+     6 profit_calc[s1]
+                    NL             0            -0                        -0.4 
+     7 profit_calc[s2]
+                    NL             0            -0                   -0.227273 
+     8 profit_calc[s3]
+                    NL             0            -0                   -0.272727 
+     9 profit_calc[s4]
+                    NL             0            -0                        -0.1 
+    10 worst[s1]    NU             0                          -0           0.4 
+    11 worst[s2]    NU             0                          -0      0.227273 
+    12 worst[s3]    NU             0                          -0      0.272727 
+    13 worst[s4]    NU             0                          -0           0.1 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 accepted[b1] B       0.818182             0             1 
+     2 accepted[b2] NL             0             0             1      -2.74545 
+     3 accepted[b3] NU             1             0             1      0.645455 
+     4 accepted[b4] B              0             0             1 
+     5 accepted[b5] B            0.9             0             1 
+     6 poss_profit[s1]
+                    B       0.645455                             
+     7 poss_profit[s2]
+                    B       0.645455                             
+     8 poss_profit[s3]
+                    B       0.645455                             
+     9 poss_profit[s4]
+                    B       0.645455                             
+    10 worst_case_profit
+                    B       0.645455                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.78e-15 on row 9
+        max.rel.err = 1.94e-16 on row 11
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 3.55e-15 on column 5
+        max.rel.err = 1.27e-15 on column 5
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

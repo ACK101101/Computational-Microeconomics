@@ -1,0 +1,56 @@
+Problem:    auctioneer_wdp
+Rows:       13
+Columns:    10 (5 integer, 5 binary)
+Non-zeros:  53
+Status:     INTEGER OPTIMAL
+Objective:  fin_profit = 0 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 fin_profit                  0                             
+     2 not_neg[s1]                 0            -0               
+     3 not_neg[s2]                 0            -0               
+     4 not_neg[s3]                 0            -0               
+     5 not_neg[s4]                 0            -0               
+     6 profit_calc[s1]
+                                   0            -0               
+     7 profit_calc[s2]
+                                   0            -0               
+     8 profit_calc[s3]
+                                   0            -0               
+     9 profit_calc[s4]
+                                   0            -0               
+    10 worst[s1]                   0                          -0 
+    11 worst[s2]                   0                          -0 
+    12 worst[s3]                   0                          -0 
+    13 worst[s4]                   0                          -0 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 accepted[b1] *              0             0             1 
+     2 accepted[b2] *              0             0             1 
+     3 accepted[b3] *              0             0             1 
+     4 accepted[b4] *              0             0             1 
+     5 accepted[b5] *              0             0             1 
+     6 poss_profit[s1]
+                                   0                             
+     7 poss_profit[s2]
+                                   0                             
+     8 poss_profit[s3]
+                                   0                             
+     9 poss_profit[s4]
+                                   0                             
+    10 worst_case_profit
+                                   0                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

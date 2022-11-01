@@ -1,0 +1,45 @@
+Problem:    auctioneer_wdp
+Rows:       6
+Columns:    6
+Non-zeros:  26
+Status:     OPTIMAL
+Objective:  fin_profit = 4.176470588 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 fin_profit   B        4.17647                             
+     2 not_neg[s1]  NL             0            -0                   -0.911765 
+     3 not_neg[s2]  NL             0            -0                   -0.323529 
+     4 not_neg[s3]  NL             0            -0                   -0.588235 
+     5 not_neg[s4]  B        4.17647            -0               
+     6 profit_calc  NL             0            -0                          -1 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 accepted[b1] B       0.529412             0             1 
+     2 accepted[b2] NL             0             0             1      -12.6471 
+     3 accepted[b3] B       0.647059             0             1 
+     4 accepted[b4] B              0             0             1 
+     5 accepted[b5] NU             1             0             1       4.17647 
+     6 worst_case_profit
+                    B        4.17647                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 8.88e-16 on column 3
+        max.rel.err = 8.16e-17 on column 3
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
